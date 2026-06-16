@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A cute Valentine's Day page to ask someone to be your Valentine!">
+  <meta name="description" content="A cute page asking Neil out for a movie date!!">
   <meta name="theme-color" content="#ffd0e5">
-  <title>Valentine's Day</title>
+  <title>Movie Date?</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <style>
     .gradient-background {
-      background: linear-gradient(180deg, #ffd0e5 0%, #ffe8f2 36%, #ffffff 100%);
+   background: linear-gradient(180deg, #1f2937 0%, #374151 50%, #111827 100%);
       min-height: 100vh;
     }
 
@@ -48,7 +48,7 @@
         alt="Cute kitten with flowers"
         class="rounded-md h-[300px] object-cover"
       />
-      <h1 id="valentineQuestion" class="text-3xl md:text-4xl font-bold text-center text-[#bd1e59] my-6 max-w-xl">
+      <h1 id="valentineQuestion" class="text-3xl md:text-4xl font-bold text-center text-white my-6 max-w-xl">
   Neil Bion,<br><br>
   I was going to ask something much more scandalous.<br><br>
   But let's start with this:<br><br>
@@ -146,19 +146,12 @@
       yesButton.addEventListener('click', () => {
         imageDisplay.src = IMAGE_PATHS[IMAGE_PATHS.length - 1];
         imageDisplay.alt = ALT_TEXTS[ALT_TEXTS.length - 1];
-        valentineQuestion.innerHTML = `
+valentineQuestion.innerHTML = `
 GOOD CHOICE. 😌❤️<br><br>
-
-Your movie date with Vonne Milanes
-has been successfully confirmed.<br><br>
-
-Benefits include:<br>
-✓ Popcorn<br>
-✓ My company<br>
-✓ Quality time<br>
-✓ Unlimited opportunities to make me blush<br><br>
-
-See you later, Neil. 🍿❤️
+Movie date secured.<br><br>
+See you later, Neil.<br>
+— Vonne
+`;
 `;
         responseButtons.style.display = 'none';
 
